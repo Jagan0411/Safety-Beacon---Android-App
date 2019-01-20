@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title="View Contacts"
+        app:showAsAction="never"
+        android:id="@+id/view_contacts"
+        android:onClick="viewContact"
+        />
+
+    <item android:title="My Profile"
+        app:showAsAction="never"
+        android:id="@+id/view_profile"
+        android:onClick="viewProfile"
+        />
+
+    <item
+        android:title="App Info"
+        app:showAsAction="ifRoom"
+        android:id="@+id/app_info"
+        android:icon="@drawable/ic_info_white_24dp"
+        android:onClick="appInfo"
+        />
+
+</menu>

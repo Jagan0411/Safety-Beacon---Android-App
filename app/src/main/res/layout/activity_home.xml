@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/gradient_background"
+    tools:context=".Home">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+
+        app:srcCompat="@drawable/main_logo"
+        android:layout_marginTop="48dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/logo"
+        android:layout_marginTop="16dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textSize="32sp"
+
+        android:id="@+id/welcome_note"
+
+        android:textColor="#aeff0000"
+        android:textStyle="bold"
+        android:text="@string/tagline1"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/welcome_note"
+        android:layout_marginTop="8dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textSize="20sp"
+
+        android:id="@+id/welcome_note2"
+
+        android:textColor="#ffffff"
+        android:textStyle="italic"
+        android:text="@string/tagline2"/>
+
+</RelativeLayout>

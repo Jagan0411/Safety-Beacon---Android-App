@@ -1,0 +1,145 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="@drawable/gradient_background"
+    tools:context=".AddContact_Fragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="contacts"
+
+        android:textColor="@color/colorPrimaryDark"
+        android:fontFamily="monospace"
+        android:textAllCaps="true"
+        android:textSize="32sp"
+        android:textAlignment="center"
+        android:id="@+id/head"
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentLeft="true"
+            android:text="name"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimaryDark"
+
+            android:textSize="20sp"
+            android:fontFamily="monospace"
+            android:layout_marginTop="16dp"
+
+            android:id="@+id/name_tag"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentLeft="true"
+            android:text="phone"
+            android:fontFamily="monospace"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp"
+
+            android:layout_marginTop="16dp"
+
+            android:layout_below="@+id/name_tag"
+
+            android:id="@+id/phone_tag"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentLeft="true"
+            android:text="email"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp"
+            android:fontFamily="monospace"
+
+            android:layout_marginTop="16dp"
+
+
+            android:layout_below="@+id/phone_tag"
+
+            android:id="@+id/email_tag"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_name"
+            android:layout_toRightOf="@+id/name_tag"
+
+            android:layout_marginLeft="18dp"
+            android:layout_alignParentRight="true"
+            android:imeOptions="actionNext"
+            android:inputType="textPersonName"
+
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/edit_phone"
+
+            android:layout_below="@+id/name_tag"
+            android:layout_toRightOf="@+id/phone_tag"
+
+            android:layout_marginLeft="8dp"
+            android:layout_alignParentRight="true"
+            android:imeOptions="actionNext"
+            android:inputType="textPhonetic"
+
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/edit_email"
+
+            android:layout_below="@id/phone_tag"
+            android:layout_toRightOf="@+id/email_tag"
+
+            android:layout_marginLeft="8dp"
+            android:layout_alignParentRight="true"
+
+            android:imeOptions="actionDone"
+            android:inputType="textEmailAddress"
+            />
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+
+            android:layout_marginTop="8dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/email_tag"
+
+            android:id="@+id/add"
+
+            android:text="Add"
+            android:textColor="#FDFEFE"
+            android:background="@drawable/add_contact_btn"
+            android:shadowColor="#ffffff"
+            android:textStyle="bold"
+            android:fontFamily="monospace"
+
+            />
+    </RelativeLayout>
+
+
+</LinearLayout>
